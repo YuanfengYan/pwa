@@ -1,7 +1,7 @@
 module.exports = {
     baseUrl: './',
     outputDir: 'dist',
-    assetsDir: 'static',
+    // assetsDir: 'static',
     lintOnSave: true,
     runtimeCompiler: true, //关键点在这  
     // 调整内部的 webpack 配置。
