@@ -1,6 +1,6 @@
 {
-  "name": "testproject",
-  "short_name": "testproject",
+  "name": "pwa",
+  "short_name": "pwa",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

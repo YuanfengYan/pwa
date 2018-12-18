@@ -1,4 +1,4 @@
-# testproject
+# pwa
 
 ## Project setup
 ```
