@@ -3,7 +3,7 @@ const Mock = require('mockjs');
 // 获取 mock.Random 对象
 const Random = Mock.Random;
 // mock一组数据
-const produceNewsData = function() {
+const produceNewsData = function () {
     let articles = [];
     for (let i = 0; i < 100; i++) {
         let newArticleObject = {
@@ -14,11 +14,13 @@ const produceNewsData = function() {
         }
         articles.push(newArticleObject)
     }
- 
+
     return {
         articles: articles
     }
 }
- 
+
+let produceNewsData1={"2134"}
+console.log('produceNewsData')
 // Mock.mock( url, post/get , 返回的数据)；
-Mock.mock('/news/index', 'post', produceNewsData);
+Mock.mock('http://mock.test/api/facade/xxxx', 'get', produceNewsData1);

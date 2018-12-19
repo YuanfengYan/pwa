@@ -13,6 +13,19 @@ export default {
   name: "home",
   components: {
     HelloWorld
+  },
+  mounted() {
+    console.log(213);
+    this.getList()
+  },
+  methods: {
+    getList() {
+      this.$http.get("/api/facade/xxxx",{}).then(res=>{
+        console.log("res")
+      }).catch(err=>{
+        console.log(err)
+      })
+    },
   }
 };
 </script>

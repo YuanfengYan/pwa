@@ -3,9 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
-import axios from 'axios' 
-Vue.use(axios)
-Vue.prototype.$http = axios
+import initPlugin from "./initPlugin.js";
+require('./mock.js')
+initPlugin(Vue);
 Vue.config.productionTip = false;
 
 new Vue({
